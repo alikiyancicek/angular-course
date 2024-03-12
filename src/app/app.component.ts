@@ -1,4 +1,16 @@
-import { Component } from '@angular/core';
+import {
+  AfterContentInit,
+  AfterViewInit,
+  Component,
+  ContentChild,
+  ContentChildren,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output, QueryList, TemplateRef,
+  ViewChild
+} from '@angular/core';
 import {COURSES} from '../db-data';
 
 @Component({
@@ -8,6 +20,8 @@ import {COURSES} from '../db-data';
 })
 export class AppComponent {
 
-
+  coreCourse= COURSES[0];
+  rxjsCourse= COURSES[1];
+  ngrxCourse= COURSES[2];
 
 }
